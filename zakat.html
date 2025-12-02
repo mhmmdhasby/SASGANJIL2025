@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Zakat Penghasilan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <div class="container">
+        <h1>💰 Kalkulator Zakat Penghasilan</h1>
+        <hr>
+        
+        <label for="penghasilan">Penghasilan Kotor Per Bulan (Rp):</label>
+        <input type="number" id="penghasilan" placeholder="Contoh: 10000000" required min="0">
+        
+        <label for="pengeluaran">Pengeluaran Pokok Per Bulan (Rp):</label>
+        <input type="number" id="pengeluaran" placeholder="Contoh: 3000000" required min="0">
+        
+        <div class="button-group">
+            <button id="hitungBtn" onclick="hitungZakat()">Hitung Zakat</button>
+            <button id="resetBtn" onclick="resetForm()">Reset</button>
+        </div>
+        
+        <div id="hasil">
+            <h2>Hasil Perhitungan</h2>
+            <div class="result-item"><small>Ketentuan Nisab: Rp7.140.498/bulan</small></div>
+            <hr>
+            <div class="result-item"><strong>Penghasilan Kotor:</strong> <span id="resPenghasilan">-</span></div>
+            <div class="result-item"><strong>Pengeluaran Pokok:</strong> <span id="resPengeluaran">-</span></div>
+            <div class="result-item"><strong>Penghasilan Bersih:</strong> <span id="resBersih">-</span></div>
+            <hr>
+            <div class="result-item"><strong>Status Kewajiban:</strong> <span id="resStatus">-</span></div>
+            <div class="result-item"><strong>Zakat yang Dibayarkan (2,5%):</strong> <span id="resZakat">-</span></div>
+        </div>
+        <a href="index.html">🔙</a
+    </div>
+    
+    
+    <script src="zakat.js"></script>
+</body>
+
+</html>
